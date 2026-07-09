@@ -1,0 +1,26 @@
+{
+  "name": "peticion-en-3-clicks",
+  "version": "1.0.0",
+  "description": "Plataforma comunitaria para crear causas, registrar apoyos y generar PDF colectivo.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angeljose1811/peticion-en-3-clicks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/angeljose1811/peticion-en-3-clicks/issues"
+  },
+  "homepage": "https://github.com/angeljose1811/peticion-en-3-clicks#readme",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "sqlite3": "^6.0.1"
+  }
+}
