@@ -78,6 +78,11 @@ async function pintarCausas(causas) {
             Para apoyar esta causa usa un nombre de práctica. No escribas cédula,
             teléfono, dirección ni datos sensibles.
           </section>
+          <p>
+              <button type="button" onclick="descargarPdf(${causa.id})">
+                Descargar PDF
+              </button>
+          </p>
 
           <form onsubmit="registrarApoyo(event, ${causa.id})">
             <label for="nombre-${causa.id}">Nombre de práctica</label>
@@ -109,6 +114,10 @@ async function pintarCausas(causas) {
   for (const causa of causas) {
     await cargarApoyos(causa.id);
   }
+}
+
+function descargarPdf(causaId) {
+  window.open(`/api/pdf/${causaId}`, "_blank");
 }
 
 async function cargarApoyos(causaId) {

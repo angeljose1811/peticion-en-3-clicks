@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 const db = require("./config/db");
 const causasRoutes = require("./routes/causas.routes");
 const apoyosRoutes = require("./routes/apoyos.routes");
+const pdfRoutes = require("./routes/pdf.routes");
 
 dotenv.config();
 
@@ -31,6 +32,7 @@ app.get("/estado", (req, res) => {
 
 app.use("/api/causas", causasRoutes);
 app.use("/api/apoyos", apoyosRoutes);
+app.use("/api/pdf", pdfRoutes);
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en http://localhost:${PORT}`);
